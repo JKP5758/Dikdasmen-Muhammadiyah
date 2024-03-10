@@ -28,18 +28,18 @@ nav{
     position: fixed;
     width: 100%;
     height: 15vh;
-    background-color: rgba(0, 120, 255, 0.7);
+    background-color: rgba(0, 70, 220, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5vh;
 }
 
-nav ul li h4{
-    width: auto;
-    height: auto;
+nav ul li h1{
+    
     color: white;
     padding: 10px;
+    font-size: 50px;
 }
 
 nav a{
@@ -51,7 +51,11 @@ nav a{
 
 
 nav a img{
-    height: 70%;
+    
+    width : 80%;
+}
+nav a img.kecil{
+    display: none;
 }
 
 body nav ul li .dropdown{
@@ -71,7 +75,7 @@ nav ul li:hover .dropdown{
     position: absolute;
     top: 15vh;
     right: 0;
-    background-color: rgba(0, 120, 255, 0.7);
+    background-color: rgba(0, 70, 220, 0.7);
     border-radius: 0  0 10px 10px ;
 }
 
@@ -118,6 +122,37 @@ nav ul li:hover .dropdown{
 /* RESPONSIVE */
 
 @media (max-width: 550px) {
+
+    body nav a img.kecil{
+        height: 70%;
+        display: block;
+    }
+    body nav a img.besar{
+        height: 70%;
+        display: none;
+    }
+
+    body .container1 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 10px;
+        padding: 50px;
+    
+        height: 100%;
+        width: 100%;
+        
+        text-align: center;
+        font-size: 250%;
+        position: absolute;
+        z-index: 2;
+        color: white;
+        background-color: rgba(22, 22, 22, 0.75);
+        border-radius: 20px;
+    
+    }
+
     body .container2 .data{
         flex-direction: column;
     }
@@ -133,13 +168,14 @@ nav ul li:hover .dropdown{
     }
 
 
+
 }
 
 /* Animasi Mengambang */
 
 .mengambang:hover{
-    transform:scale(1.1) ;
-    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.35)  ;
+    transform:scale(1.05) ;
+    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.35)  ;
 }
 
 
@@ -147,19 +183,31 @@ nav ul li:hover .dropdown{
 /* Video */
 .container1{
     width: 100%;
-    height: auto;
+    height: 100vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .container1 video{
+    position: absolute;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
+
+
+.container1 h1{
+    display: none;
+}
+
 
 /* DATA */
 
 .container2{
     width: 100%;
-    min-height: 100vh;
     /* border: 2px solid red; */
     padding: 5%;
 }
@@ -279,7 +327,7 @@ nav ul li:hover .dropdown{
     padding: 15px;
 }
 
-.pengelola .judul h3{
+.pengelola .judul h2{
     margin:  0 20px 20px;
 
 }
@@ -323,6 +371,83 @@ nav ul li:hover .dropdown{
     transform: scale(1.5);
     margin: 10px;
 }
+
+
+
+/* Program Pengembangan */
+
+.container4{
+    width: 100%;
+    padding: 10%;
+}
+
+.program_pengembangan {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+
+.program_pengembangan .judul{
+    /* max-width: 50%; */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+span.warna{
+    padding: 5px 10px;
+    color: white;
+    background-color: rgba(0, 70, 220, 0.7);
+    border-radius: 10px;
+}
+
+.daftar_program .program{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.6s;
+    background-color: white;
+}
+
+.daftar_program .program:hover img{
+    background-color: rgba(30, 90, 225, 0.6);
+    
+}
+
+.daftar_program .program img{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.8s;
+    
+}
+
+.daftar_program .program .isi_program{
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.daftar_program .program .isi_program p{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
 
 /* Sejarah */
 
@@ -477,7 +602,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(0, 120, 255, 0.7);
+    background-color: rgba(0, 70, 220, 0.7);
 }
 
 footer h3{
@@ -495,7 +620,7 @@ footer .sosmet{
 footer .sosmet a{
     display: flex;
     padding: 10px;
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
     align-items: center;
     justify-content: center;
@@ -505,21 +630,21 @@ footer .sosmet a{
 footer .sosmet .wa:hover{
     background-color: rgba(0, 255, 0, 0.5);
     box-shadow: -5px 3px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s;
+    transition: all 0.3s;
     transform: scale(1.2);
 }
 
 footer .sosmet .ig:hover{
     background-color: rgba(255, 0, 100, 0.5);
     box-shadow: -5px 3px 10px  rgba(0, 0, 0, 0.5);
-    transition: all 0.2s;
+    transition: all 0.3s;
     transform: scale(1.2);
 }
 
 footer .sosmet .fb:hover{
     background-color: rgba(0, 0, 255, 0.5);
     box-shadow: -5px 3px 10px  rgba(0, 0, 0, 0.5);
-    transition: all 0.2s;
+    transition: all 0.3s;
     transform: scale(1.2);
 }
 
@@ -534,5 +659,5 @@ footer .copy{
     color: white;
     padding: 10px;
     width: 100%;
-    background-color: rgb(0, 120, 255);
+    background-color: rgb(0, 70, 220);
 }
