@@ -468,7 +468,83 @@ span.warna{
     
 }
 
+/* Galery */
 
+.container5{
+    width: 100%;
+    padding: 10% 7.5%;
+    text-align: center;
+}
+
+.galery{
+    padding: 50px 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.galery h2 span{
+    color: white;
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 70, 220, 0.7);
+}
+
+.galery .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: center;
+
+    margin-top: 30px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .galery .row .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    margin: 0 10px;
+  }
+  
+  .galery .row .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+
+    transition: all 0.4s;
+    filter: grayscale(100%);
+
+  }
+
+  .galery .row .column img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.5)  ;
+  }
+
+  @media screen and (max-width: 800px) {
+    .galery .row .column {
+      -ms-flex: 45%;
+      flex: 45%;
+      max-width: 45%;
+    }
+
+    .galery .row .column.hilang{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .galery .row .column {
+      -ms-flex: 75%;
+      flex: 75%;
+      max-width: 75%;
+    }
+  }
+  
 
 
 /* Sejarah */
