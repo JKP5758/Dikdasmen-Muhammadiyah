@@ -12,7 +12,7 @@
 
 body{
     font-family: poppins;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(240, 240, 240);
 }
 
 a{
@@ -635,14 +635,21 @@ footer .sosmet .wa:hover{
 }
 
 footer .sosmet .ig:hover{
-    background-color: rgba(255, 0, 100, 0.5);
+    background-color: rgba(255, 30, 120, 0.705);
     box-shadow: -5px 3px 10px  rgba(0, 0, 0, 0.5);
     transition: all 0.3s;
     transform: scale(1.2);
 }
 
 footer .sosmet .fb:hover{
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(25, 25, 255, 0.5);
+    box-shadow: -5px 3px 10px  rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+footer .sosmet .yt:hover{
+    background-color: rgba(255, 50, 50, 0.8);
     box-shadow: -5px 3px 10px  rgba(0, 0, 0, 0.5);
     transition: all 0.3s;
     transform: scale(1.2);
