@@ -194,6 +194,7 @@ nav ul li:hover .dropdown{
 
 
 
+
 /* Video */
 .container1{
     width: 100%;
@@ -648,12 +649,14 @@ span.warna{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.susunan .judul{
+    text-align: center;
+    width: 100%;
 }
 
 .susunan .isi_susunan{
-    width: 100%;
     margin: 20px;
 }
 
@@ -661,9 +664,10 @@ span.warna{
     margin-top: 20px;
 }
 
-.susunan .isi_susunan ol{
-    margin-left: 20px;
+.susunan .isi_susunan ul{
+    margin-top: 20px;
 }
+
 
 /* Alamat */
 
