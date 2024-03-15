@@ -699,6 +699,7 @@ span.warna{
     padding: 10% 5%;
 }
 .container9 .kontak{
+    background-color: rgb(255, 255, 255);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 30px;
     display: flex;
