@@ -37,7 +37,7 @@ nav{
 
 nav ul li h1{
     
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 50px;
 }
@@ -163,7 +163,7 @@ nav ul li:hover .dropdown{
         z-index: 2;
         color: white;
         background-color: rgba(22, 22, 22, 0.75);
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
     
     }
 
@@ -181,7 +181,18 @@ nav ul li:hover .dropdown{
         width: 100%;
     }
 
+    .kontak .info .info_alamat .alamat{
+        flex-direction: column;
+    }
 
+    .kontak .info .info_alamat .alamat img{
+        margin-left: 0;
+    }
+
+    .kontak .info .map iframe{
+        width: 100%;
+        min-height: 250px;
+    }
 
 }
 
