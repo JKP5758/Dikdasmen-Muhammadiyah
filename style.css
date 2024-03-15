@@ -54,7 +54,7 @@ nav a img{
     
     width : 70%;
     padding: 10px 20px 10px 10px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
 }
 nav a img.kecil{
@@ -141,7 +141,7 @@ nav ul li:hover .dropdown{
 @media (max-width: 550px) {
 
     body nav a img.kecil{
-        padding: 5px;
+        padding: 10px;
         width: 40%;
         display: block;
         background-color: rgba(255, 255, 255, 0);
@@ -166,7 +166,7 @@ nav ul li:hover .dropdown{
         position: absolute;
         z-index: 2;
         color: white;
-        background-color: rgba(22, 22, 22, 0.75);
+        background-color: rgba(22, 22, 22, 0.65);
         border-radius: 0 0 20px 20px;
     
     }
@@ -683,13 +683,10 @@ span.warna{
     margin: 20px;
 }
 
-.susunan .isi_susunan .top{
-    margin-top: 20px;
+.susunan .isi_susunan ol{
+    margin-left: 20px;
 }
 
-.susunan .isi_susunan ul{
-    margin-top: 20px;
-}
 
 
 /* Alamat */
