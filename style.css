@@ -52,7 +52,10 @@ nav a{
 
 nav a img{
     
-    width : 80px;
+    width : 70%;
+    padding: 10px 20px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
 }
 nav a img.kecil{
     display: none;
@@ -138,11 +141,12 @@ nav ul li:hover .dropdown{
 @media (max-width: 550px) {
 
     body nav a img.kecil{
-        height: 70%;
+        padding: 5px;
+        width: 40%;
         display: block;
+        background-color: rgba(255, 255, 255, 0);
     }
     body nav a img.besar{
-        height: 70%;
         display: none;
     }
 
