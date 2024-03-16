@@ -204,7 +204,7 @@ nav ul li:hover .dropdown{
 
 .mengambang:hover{
     transform:scale(1.05) ;
-    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.35)  ;
+    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.25)  ;
 }
 
 
@@ -227,7 +227,7 @@ nav ul li:hover .dropdown{
     height: 105%;
     width: 100%;
     border-radius: 0 0 20px 20px;
-    box-shadow: -5px 10px 15px  rgba(0, 10, 100, 0.35);
+    box-shadow: -5px 10px 15px  rgba(0, 10, 100, 0.25);
 }
 
 
@@ -538,7 +538,7 @@ span.warna{
   .galery .row .column img:hover {
     filter: grayscale(0);
     transform: scale(1.05);
-    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.5)  ;
+    box-shadow: -5px 10px 15px rgba(0, 10, 100, 0.25)  ;
   }
 
   @media screen and (max-width: 800px) {
